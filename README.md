@@ -45,12 +45,16 @@ src: Código fonte do projeto
 O Smart Contract, como forma automatizada e assertiva, será responsável por exercer os acordos da seguradora com os participantes dentro de um grupo mútuo.
 
 ## Requisitos de negócio:
-No smart contract seguimos as seguintes regras de negócio em nosso código;
---> Regra de negócio 1:
---> Regra de negócio 2: 
---> Regra de negócio 3: 
---> Regra de negócio 4: 
---> Regra de negócio 5: 
+<br>
+--> Regra de negócio 1: Os valores pagos pelos participantes serão proporcionais ao valor indenizável associado a cada aparelho, definido no momento da confirmação de adesão, e o pagamento de indenização será limitado ao valor protegido efetivamente (de acordo com a reserva atual dele) para cada cliente;
+<br>
+--> Regra de negócio 2: A Coover é administradora e criadora dos grupos, tendo que adicionar os participantes dos grupos, os quais tem que informar o imei(será transformado em hash) do aparelho, e uma taxa administrativa será aplicada para a entrada do grupo
+<br>
+--> Regra de negócio 3: Para a indenização ser concluída, a Coover tem que aprova-lo 
+<br>
+--> Regra de negócio 4: O membro do grupo pode repor sua reserva
+<br>
+--> Regra de negócio 5:  Os recursos depositados pelos participantes ficarão no smart contract (DAO), com saldo individual para cada participante, e a Seguradora P2P não deve possuir capacidade de acessar esses recursos, senão pelas regras de governança estabelecidas no smart contract.
 
 ## Diagrama de Blocos
 
