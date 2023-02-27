@@ -9,6 +9,7 @@
 # Seguros mútuos com Smart Contracts via Blockchain
 
 ## VanCoover
+![image](https://user-images.githubusercontent.com/99209230/221455296-381a9298-fe58-45e8-b25f-d097605a77d9.png)
 
 - <a href="https://www.linkedin.com/in/vit%C3%B3ria-rodrigues-de-oliveira-bb955921b/">Vitória Rodrigues de Oliveira </a>
 - <a href="https://www.linkedin.com/in/gustavo-monteiro-1a499919a/">Gustavo Monteiro</a>
@@ -33,14 +34,6 @@ A solução deste projeto consiste em uma aplicação em Web3 para seguro P2P de
  
 | readme.md<br>
 
-
-Explicação dos arquivos e pasta dos projetos:
-
-readme.md: Arquivo introdutório e condutor do projeto.
-
-documentos: Encontra-se a documentação do projeto.
-
-src: Código fonte do projeto
 
 ## 💻 Smart Contract 
 O Smart Contract, como forma automatizada e assertiva, será responsável por exercer os acordos da seguradora com os participantes dentro de um grupo mútuo.
