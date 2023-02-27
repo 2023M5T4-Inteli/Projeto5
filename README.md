@@ -26,10 +26,11 @@ A solução deste projeto consiste em uma aplicação em Web3 para seguro P2P de
 
 |--> Documentação<br>
   &emsp;| DocumentaçãoProjetoModulo5.docx.pdf<br>
-|--> src<br>
-  &emsp;|--> Smart_Contract<br>
-  &emsp;|--> Backend<br>
-  &emsp;|--> Frontend<br>
+|--> Smart_Contract<br>
+&emsp;| smartContract<br>
+|--> Frontend<br>
+|--> Backend<br>
+ 
 | readme.md<br>
 
 
@@ -46,26 +47,24 @@ O Smart Contract, como forma automatizada e assertiva, será responsável por ex
 
 ## Requisitos de negócio:
 <br>
+<br>
 --> Regra de negócio 1: Os valores pagos pelos participantes serão proporcionais ao valor indenizável associado a cada aparelho, definido no momento da confirmação de adesão, e o pagamento de indenização será limitado ao valor protegido efetivamente (de acordo com a reserva atual dele) para cada cliente;
+<br>
 <br>
 --> Regra de negócio 2: A Coover é administradora e criadora dos grupos, tendo que adicionar os participantes dos grupos, os quais tem que informar o imei(será transformado em hash) do aparelho, e uma taxa administrativa será aplicada para a entrada do grupo
 <br>
+<br>
 --> Regra de negócio 3: Para a indenização ser concluída, a Coover tem que aprova-lo 
 <br>
+<br>
 --> Regra de negócio 4: O membro do grupo pode repor sua reserva
+<br>
 <br>
 --> Regra de negócio 5:  Os recursos depositados pelos participantes ficarão no smart contract (DAO), com saldo individual para cada participante, e a Seguradora P2P não deve possuir capacidade de acessar esses recursos, senão pelas regras de governança estabelecidas no smart contract.
 
 ## Diagrama de Blocos
 
-Texto
-
-![image]()
-
-
-Texto
-
-Texto
+![image](https://user-images.githubusercontent.com/99209230/221454880-b20faa51-ca37-4822-8030-d9cc90931a89.png)
 
 ## UML
 ### Pedido de Adesão
