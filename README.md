@@ -56,7 +56,7 @@ No smart contract seguimos as seguintes regras de negócio em nosso código;
 
 Texto
 
-![image](https://user-images.githubusercontent.com/99191909/221442612-d2bd7a19-c809-4e34-a877-6a1aa04d8382.png)
+![image]()
 
 Texto
 
