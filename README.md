@@ -58,23 +58,58 @@ Texto
 
 ![image]()
 
+
 Texto
 
 Texto
 
 ## UML
-Texto
+### Pedido de Adesão
 
-![image](colocar link de imagem aqui)
-Texto
+![image](https://user-images.githubusercontent.com/99209230/221448077-f81307a6-18cb-49c2-ae21-9635979dfbd8.png)
+<br>
+Figura 8 - Diagrama sequencial do processo de pedido de adesão, mostrando as interações entre o Cliente e a Interface Web com MetaMask e o SmartContract (TestNet). Atenção: O diagrama considera a autenticação da identificação do usuário na Interface Web com MetaMask como bem sucedida.
+Com o fluxo para o pedido de adesão de um cliente (Figura 8), o sistema permite que o cliente solicite a adesão de um contrato através de uma Interface Web contactada à MetaMask. O cliente solicita os contratos disponíveis para o sistema utilizando uma Interface Web (1.1), que requisita ao SmartContract no servidor de teste TestNet (2.1), retornando os contratos disponíveis para a Interface (2.2), mostrando na tela para o Cliente visualizar (1.2).
+Com isso o usuário pode selecionar um contrato dentre os disponíveis, confirmar a seleção (3.1), e o sistema verifica os grupos disponíveis para este contrato no SmartContract (4.1), retornando para a Interface o registro e a confirmação da requisição (4.2), mostrando uma mensagem para o usuário do sucesso da requisição feita (3.2).
+Todo esse processo é realizado de forma sequencial, onde o sistema deve garantir que as interações do Cliente com a Interface Web sejam registradas corretamente.
+Após o Cliente realizar o pedido de adesão, o processo continua com a avaliação de um administrador do parceiro de projeto Coover, que pode aprovar ou rejeitar a solicitação. O diagrama a seguir apresenta as etapas do processo de avaliação e aprovação do administrador Coover.
 
-![image](colocar link de imagem aqui)
-Texto
-![image](colocar link de imagem aqui)
-Texto
+![image](https://user-images.githubusercontent.com/99209230/221448541-aa0a8ff7-e884-4161-b703-af3395062cfb.png)
+<br>
+Figura 9 - Diagrama sequencial do processo de aceitação de um pedido de adesão feito por um cliente, mostrando as interações entre um administrador (Adm Coover) e a Interface Web Admin com MetaMask e o SmartContract (TestNet). Atenção: O diagrama considera a autenticação da identificação do usuário na Interface Web Admin com MetaMask e MetaMask do Solicitante como bem sucedida..
+O diagrama (Figura 9) ilustra o fluxo do administrador, que possui várias etapas do processo de análise de um pedido de adesão, até sua aprovação.
+A primeira etapa é a requisição para visualização da situação dos contratos em aberto a partir do administrador (1.1), através da Interface Web de Administrador que requisita no SmartContract a situação dos contratos em aberto (2.1). O retorno bem-sucedido da requisição permite que o SmartContract forneça a informação na tela da Interface Web (2.2), possibilitando a visualização pelo usuário deste sistema (1.2) permitindo a avaliação dos contratos em aberto.
+A segunda etapa se assemelha à primeira, onde o usuário solicita os pedidos de adesão não atendidos através da Interface Web de administrador (3.1), que por sua vez requisita a informação do SmartContract no TestNet (4.1), que retorna à Interface as informações requisitadas (4.2), possibilitando a análise das informações pelo usuário (3.2).
+Com essas informações, o administrador pode selecionar e aprovar um pedido de adesão de um cliente, utilizando a Interface Web de administrador (5.1), que envia a aprovação do pedido ao SmartContract (6.1), onde um código será executado para fazer uma solicitação de transferência de recursos ao SmartContract, a partir da carteira do usuário solicitante através do MetaMask (7.1), que por sua vez irá notificar o Cliente para aprovação ou rejeição da transferência (8.1). Ao aprovar (8.2), os recursos saem do MetaMask para o SmartContract com o valor de entrada do contrato, registrando na rede a adesão do Cliente solicitante e a transferência dos recursos (7.2), retornando à Interface Web de administrador que a transferência foi realizada e registrada no SmartContract (6.2).
+Cada uma das etapas é importante para garantir a segurança e eficiência do processo de adesão de clientes no SmartContract. O administrador podendo aceitar ou rejeitar pedidos de adesão permite a atribuição de critérios próprios para essas decisões, antes de solicitar a transferência de recursos do usuário, caso este seja rejeitado. A transferência do valor, por sua vez, garante que o membro está comprometido financeiramente com os recursos do seguro mútuo do grupo, que apenas finaliza sua aprovação de entrada após o pagamento.
 
-![image](colocar link de imagem aqui)
-Texto
+### Pedido de Indenização
+![image](https://user-images.githubusercontent.com/99209230/221448684-a5684860-6b83-4522-a807-c2a241063206.png)
+<br>
+Figura 10 - Diagrama sequencial do processo de pedido de indenização, mostrando as interações entre o Cliente e a Interface Web com MetaMask e o SmartContract (TestNet). Atenção: O diagrama considera a autenticação da identificação do usuário na Interface Web com MetaMask como bem sucedida.
+A partir de um contrato ativo, o diagrama (Figura 10) ilustra o processo de um pedido de indenização de um cliente.
+Neste processo, o Cliente inicia solicitando a situação de seus contratos ativos por meio da Interface Web com MetaMask (1.1), onde a requisição é feita para o SmartContract (2.1), onde a informação é retornada para a Interface (2.2) permitindo a análise da situação dos contratos em que o usuário faz parte (1.2).
+Quando o cliente decide fazer a solicitação de uma indenização (3.1), a Interface Web envia a requisição e registra esse pedido no SmartContract (4.1), que sendo bem sucedida, retorna para a Interface que a solicitação foi feita (4.2), mostrando para o usuário que a solicitação foi realizada (3.2).
+A avaliação do pedido de indenização é realizada por um administrador que verifica os pedidos de indenização não atendidos. O processo de aceitação de um pedido de indenização está ilustrado no diagrama a seguir:
+
+
+![image](https://user-images.githubusercontent.com/99209230/221448750-f94d4c50-4caa-449d-86f8-95113cb27932.png)
+<br>
+Figura 11 - Diagrama sequencial que descreve o processo de aceitação de pedido de indenização por um administrador (Adm Coover) por meio de uma Interface Web Admin com MetaMask e o SmartContract (TestNet). Atenção: O diagrama considera a autenticação da identificação do usuário na Interface Web Admin com MetaMask e MetaMask do Solicitante como bem sucedida..
+O comportamento esperado do sistema descrito no diagrama (Figura 11) é que, ao receber a solicitação de indenização feito por um cliente, o administrador (Adm Coover) deve verificar a situação dos contratos ativos (1.1), através da Interface Web de administrador, que requisita a informação ao SmartContract (TestNet) (2.1), retornando a informação na tela (2.2) para o administrador visualizar os contratos ativos (1.2).
+Em seguida, devem ser verificados os pedidos de indenização em aberto com solicitações pendentes, pelo usuário administrador utilizando a Interface Web de administrador (3.1), que também requisita a informação ao SmartContract (4.1), retornando à Interface (4.2) as informações para o usuário (3.2).
+Caso o pedido seja aprovado pelo usuário administrador através da Interface Web de administrador (5.1), a requisição de transferência de recursos para o solicitante é feita e registrada na blockchain (6.1), que transfere esses recursos diretamente para a carteira do MetaMask (7.1). Após a transferência, o SmartContract registra que a transferência foi realizada e devolve a informação de sucesso para a Interface Web de administrador (6.2) que visualiza a mensagem de sucesso na tela (5.2).
+Vale destacar que a ordem das etapas é muito importante, pois o registro da aprovação da transferência e o registro da transferência efetuada garantem a segurança do que foi realizado, podendo identificar problemas caso a transferência tenha sido aprovada e registrada, mas não tenha sido realizada, e registrando apenas após a transferência ter sido feita, e não antes. Além de maior segurança, também garante a transparência das transações, reduzindo custos e intermediários nos processos na forma tradicional.
+
+### Reposição de Risco
+![image](https://user-images.githubusercontent.com/99209230/221448856-dde165c7-7f8d-4162-a466-a206573ccc52.png)
+<br>
+Figura 12 - Diagrama sequencial que descreve o processo de reposição de recursos da reserva de risco de um cliente, mostrando as interações entre o Cliente e a Interface Web com MetaMask e o SmartContract (TestNet). Atenção: O diagrama considera a autenticação da identificação do usuário na Interface Web com MetaMask como bem sucedida.
+Este diagrama sequencial (Figura 12) descreve o comportamento esperado do sistema em uma operação de reposição de reserva de risco por parte do cliente. O processo se inicia com a verificação do Cliente pela quantidade de recursos disponíveis a partir da Interface Web (1.1). A seguir a Interface requisita do SmartContract a situação atual dos recursos (2.1), que retorna para a Interface a informação solicitada (2.2), que permite sua visualização por parte do cliente (1.2).
+Considerando que os recursos não estejam no seu valor total, o Cliente faz uma solicitação de reposição de recursos utilizando a Interface Web (3.1), que envia a solicitação para o SmartContract (4.1), que calcula a diferença no valor depositado com o valor total, retornando uma requisição de transferência para a Interface Web que está ligada ao MetaMask do Cliente (4.2). O MetaMask através da Interface Web solicita uma autorização de transferência de recursos (3.2), e assim que for aprovada pelo Cliente (3.3), Transfere os recursos para o SmartContract e registra essa transferência (5.1).
+Com isso, o SmartContract retorna para a Interface Web a atualização da situação dos recursos do usuário (5.2), que pode ver na tela os recursos atuais disponíveis (6.1).
+O processo de reposição de recursos da reserva de risco é fundamental para garantir a cobertura total do serviço contratado, ajudando a manter a solvência da empresa, permitindo recursos disponíveis para cobrir riscos e indenizações do grupo de seguro mútuo. O diagrama ainda destaca a importância de registrar a transferência bem sucedida, assim que for efetuada, trazendo mais segurança e transparência no processo.
+
 
 
 
