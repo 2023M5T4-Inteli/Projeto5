@@ -155,6 +155,82 @@ Com todo o setup instalado, a tentativa de deploy foi iniciada. <br>
 
 
 
+
+
+## 📝 Casos de Teste Sprint 3
+### Criação de Grupo
+
+
+![image](https://user-images.githubusercontent.com/99209230/224575714-9bf46afd-d882-426e-b525-8f432024dd8a.png)
+![image](https://user-images.githubusercontent.com/99209230/224575770-9952210c-a227-4c8d-bd4b-56fea6369f67.png)
+
+### Adicionar ao Grupo
+
+
+![image](https://user-images.githubusercontent.com/99209230/224575840-7884857a-e3fb-4745-8816-ac0afdddc477.png)
+
+#### Fluxo alternativos Testados
+
+<br>
+Valor Depositado Insuficiente
+<br>
+
+![image](https://user-images.githubusercontent.com/99209230/224575885-3087f356-99a5-4279-864a-ff0dbc864892.png)
+<br>
+
+Apenas a seguradora pode executar essa função
+<br>
+
+![image](https://user-images.githubusercontent.com/99209230/224575923-57403b03-578a-4cae-883c-1f643d51dafe.png)
+
+<br>
+
+### Solicitar Indenização
+
+
+![image](https://user-images.githubusercontent.com/99209230/224576067-bc78a5d7-a20b-4b5e-a4f5-5fadac883579.png)
+
+<br>
+
+![image](https://user-images.githubusercontent.com/99209230/224576103-611550fe-4633-4310-b87e-68de32a1837c.png)
+<br>
+
+
+### Indenização
+
+
+![image](https://user-images.githubusercontent.com/99209230/224576139-fc055036-f9e9-43d8-95e9-7dd6a6a2c9c6.png)
+
+#### Fluxo alternativos Testados
+
+
+<br>
+Apenas a seguradora pode executar essa função
+<br>
+
+![image](https://user-images.githubusercontent.com/99209230/224576282-f030ce6c-3bf7-4f2d-ae73-aba2c20e3fd5.png)
+<br>
+
+O valor do ativo não é correspondente ao do usuário indenizado
+<br>
+
+![image](https://user-images.githubusercontent.com/99209230/224576362-0a80d90d-e3a3-4b26-9900-5cc13caef2cd.png)
+<br>
+
+### Deletar Participante
+
+![image](https://user-images.githubusercontent.com/99209230/224576442-ce13e4c1-dc64-4122-8372-3fc13cfc07ca.png)
+
+<br>
+
+![image](https://user-images.githubusercontent.com/99209230/224576467-a369e906-b4cf-4a83-a401-f98a0138e75e.png)
+
+<br>
+
+![image](https://user-images.githubusercontent.com/99209230/224576483-84b7ee58-bc27-43d7-a932-e7d9d7003eed.png)
+
+
+
 ## 🗃 Histórico de lançamentos
 
 * 0.2.1 - 07/04/2023
@@ -162,7 +238,7 @@ Com todo o setup instalado, a tentativa de deploy foi iniciada. <br>
 * 0.2.0 - 24/03/2023
     * Quarta entrega - 
 * 0.1.1 - 10/03/2023
-    * Terceira entrega - 
+    * Terceira entrega - Deploy e casos de teste
 * 0.1.0 - 24/02/2023
     * Segunda entrega - Smart Contract e arquitetura da solução
 * 0.0.1 - 10/02/2023
@@ -170,3 +246,18 @@ Com todo o setup instalado, a tentativa de deploy foi iniciada. <br>
 
 ## 📋 Licença/License
 <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/2023M5T4-Inteli/Projeto5">VanCoover  <a> by </a> <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/2023M5T4-Inteli/Projeto5#readme">Inteli, <a href="https://www.linkedin.com/in/vit%C3%B3ria-rodrigues-de-oliveira-bb955921b/">Vitória Rodrigues de Oliveira	</a>, <a href="https://www.linkedin.com/in/gustavo-monteiro-1a499919a/"> Gustavo Monteiro</a>, <a href="https://www.linkedin.com/in/thainadedeus/">Thainá Lima</a>, <a href="https://www.linkedin.com/in/gabriel-rocha-pinto-santos-/" >Gabriel Rocha Pinto Santos </a>, <a href="https://www.linkedin.com/in/daniel-barzilai-061036234/">Daniel Barzilai	</a>, <a href="https://www.linkedin.com/in/rodrigo-moraes-martins-/">Rodrigo Moraes Martins</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
