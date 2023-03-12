@@ -110,6 +110,50 @@ O processo de reposição de recursos da reserva de risco é fundamental para ga
 
 
 
+## 📝 Diário de bordo
+### Deploy
+
+Inicialmente, conferimos se o código estava sem erros no Visual Code e se as funções estão funcionando corretamente no Remix IDE. <br>
+Com a certeza de que o código está sem erros aparentes, no Visual Code, fizemos a instalação do "Truffle" no command prompt. <br>
+A iniciação do truffle conectado ao repositória do GitHub, criam pastas específicas para o deploy, além de serem necessárias a criação de arquivos ".Js".<br>
+Após a execução dos comandos de criação do "package.jason" e instalação da biblioteca  @openzeppelin/contracts, era necessário a obtenção de uma API key a partir do Infura (plataforma de APIs de Blockchain). <br>
+Com todo o setup instalado, a tentativa de deploy foi iniciada. <br>
+1 - A primeira tentativa foi utilizando o goerli, mas o erro era associado aos parâmetros do contrato passados no deploy; <br>
+2- Dessa forma, na segunda vez, tentamos a utilização de outro contrato, sem parâmetros especificados, e outro erro foi identificado. Segue a imagem abaixo: <br>
+
+<br>
+<img width="2000" alt="image (6)" src="https://user-images.githubusercontent.com/99210798/224570908-b8181a37-7c3f-4237-8a08-b0a8d32dcb4b.png">
+<br>
+
+3- O erro persistiu mesmo após a instalação dos comandos abaixo, em uma quarta tentativa:
+```sh
+ npm i -D hardhat @nomiclabs/hardhat-ethers @typechain/ethers-v5 @types/node@^14 typechain ts-node ethers typechain prettier prettier-plugin-solidity prettier-config-solidity dotenv @typechain/hardhat
+
+```
+<img width="700" alt="image (9)" src="https://user-images.githubusercontent.com/99210798/224572193-f6a1d8a3-fd20-4e33-b4d5-d0e7ecec5e6d.png">
+
+![image](https://user-images.githubusercontent.com/99210798/224572338-4b9a63d1-225e-47d7-a1ff-4a76395ef668.png)
+
+4- Por saber pouco a respeito do deploy na rede Blockchain, haver instabilidade no Goerli, causando dificuldade no uso das carteiras, observada pelos outros grupos e provada na primeira e segunda tentativa, além de estarmos perto do prazo de entrega, mapeamos as outras possibilidades de realizar o deploy, mesmo que localmente; <br>
+5- Sendo assim, o "Ganache", foi a nossa escolha, consolidando a quinta tentativa. Assim, utilizamos a carteira do "Ganache" para fazer o deploy do contrato;
+
+```sh
+ npm init -y 
+```
+
+```sh
+  npx truffle compile 
+```
+
+```sh
+ npx truffle migrate
+```
+
+6- Por fim, o Deploy foi realizado com sucesso. <br>
+
+<img width="649" alt="image (11)" src="https://user-images.githubusercontent.com/99210798/224573092-6f446524-06a5-4f4f-be71-cf8e069c6c90.png">
+
+
 
 ## 🗃 Histórico de lançamentos
 
