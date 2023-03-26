@@ -229,6 +229,20 @@ O valor do ativo não é correspondente ao do usuário indenizado
 
 ![image](https://user-images.githubusercontent.com/99209230/224576483-84b7ee58-bc27-43d7-a932-e7d9d7003eed.png)
 
+## 📝 Fluxo de comunicação
+
+Útil para representar como as informações fluem entre os componentes em um sistema, um fluxo de informação mostra como os dados ou sinais são transmitidos a partir de um acionamento, como os exemplos deste projeto, ao pressionar um botão, que ativa uma função atrelada a esse botão, gerando um evento.
+
+O primeiro fluxo envolve o front-end do sistema com uma extensão de navegador, que permite a interação com blockchain, para a autenticação de uma carteira virtual MetaMask.
+Quando o usuário acessa o front-end da página web, codificada em HTML, e clica no botão com o texto "Sign in wih Wallet", o navegador executa a função "connect()", codificada em JavaScript. A função verifica então se a extensão está instalada e disponível para uso. Se estiver disponível, a função envia uma solicitação utilizando a API "ethereum.request" e aguarda uma resposta.
+Um pop-up é aberto, para que o usuário entre com a senha de sua carteira. Ao confirmar e a carteira for conectada, o texto do botão muda para "Connected".
+
+Já o segundo fluxo de comunicação é sobre o evento executa uma função, após o fluxo do primeiro evento ter sido concluído, para realizar uma transação na rede Ethereum utilizando o MetaMask.
+De forma similar ao primeiro fluxo, o usuário, através da página front-end da aplicação irá clicar no botão com o texto "Execute a test transaction!", acionando a função "execute()", codificada em JavaScript.
+Dentro desta função, um conjunto de operações são desencadeadas em sequência, para a interação com um SmartContract, como a definição do endereço do contrato e a ABI associada.
+Por fim, se a execução for bem-sucedida e aprovada pelo usuário, através de um pop-up que irá surgir para confirmar a transação, o evento será concluído com a transferência do recurso selecionado para tal.
+
+A partir dos fluxos de comunicação dos dois eventos, é possível ver a integração entre uma página web e um SmartContract em blockchain.
 
 
 ## 🗃 Histórico de lançamentos
