@@ -229,6 +229,35 @@ O valor do ativo não é correspondente ao do usuário indenizado
 
 ![image](https://user-images.githubusercontent.com/99209230/224576483-84b7ee58-bc27-43d7-a932-e7d9d7003eed.png)
 
+## Testes Automatizados Sprint 4
+
+Realizamos testes unitários automatizados referentes ao Smart Contract no Remix IDE. 
+Esses testes são executados para identificar e corrigir problemas em pequenas partes do código e isso nos ajuda a garantir que o código está funcionando corretamente.
+Portanto, realizamos dois testes referentes às funções “checkConstructor()” e “viewtaxAdmin()”, e descrevemos sua pré-condição, o procedimento de teste, o resultado esperado e a pós condição.
+<br>
+<br>
+<b>1º caso de teste:</b> função “checkConstructor()”:
+<br>
+<b>Pré-condição:</b> É criado um novo contrato, passando os valores referentes ao nome do grupo, mínimo de participantes, máximo de participantes, taxa de administração e à duração de dias do contrato.
+<br>
+<b>Procedimento de teste:</b> a função “checkConstructor()” vai verificar se as variáveis usadas como parâmetros foram definidas corretamente. São elas: nomeGrupo, minimoParticipantes, maximoParticipantes, taxAdmin e duracaoDias.
+<br>
+<b>Resultado esperado:</b> A função vai retornar o grupo criado com todas as informações inseridas nas variáveis.
+<br>
+<b>Pós-condição:</b> o teste verifica as variáveis e caso não forem definidas corretamente como esperado, é retornado “Nome do grupo incorreto”, “Minimo de participantes incorreto”, “Maximo de participantes incorreto”, “Taxa de entrada incorreta” e “Duracao do contrato incorreta”.
+<br>
+<br>
+<b>2º caso de teste:</b> função “viewtaxAdmin()”
+<br>
+<b>Pré-condição:</b> O valor da taxa administrativo foi passado na struct meuGrupo.
+<br>
+<b>Procedimento de teste:</b> A função "viewtaxAdmin()" retorna a taxa admin do grupo criado.
+<br>
+<b>Resultado esperado:</b> A função irá retornar a taxa administrativa igualmente a inserida na criação do grupo .
+<br>
+<b>Pós-condição:</b> o valor da “taxaAdmin será retornado pela função "viewtaxAdmin()" e caso não seja igual ao valor esperado, irá aparecer a mensagem de erro "Taxa admin incorreta".
+<br
+
 ## 📝 Fluxo de Comunicação
 
 Útil para representar como as informações fluem entre os componentes em um sistema, um fluxo de informação mostra como os dados ou sinais são transmitidos a partir de um acionamento, como os exemplos deste projeto, ao pressionar um botão, que ativa uma função atrelada a esse botão, gerando um evento.
