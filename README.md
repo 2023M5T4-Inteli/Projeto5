@@ -229,7 +229,7 @@ O valor do ativo não é correspondente ao do usuário indenizado
 
 ![image](https://user-images.githubusercontent.com/99209230/224576483-84b7ee58-bc27-43d7-a932-e7d9d7003eed.png)
 
-## 📝 Fluxo de comunicação
+## 📝 Fluxo de Comunicação
 
 Útil para representar como as informações fluem entre os componentes em um sistema, um fluxo de informação mostra como os dados ou sinais são transmitidos a partir de um acionamento, como os exemplos deste projeto, ao pressionar um botão, que ativa uma função atrelada a esse botão, gerando um evento.
 
@@ -244,6 +244,24 @@ Por fim, se a execução for bem-sucedida e aprovada pelo usuário, através de 
 
 A partir dos fluxos de comunicação dos dois eventos, é possível ver a integração entre uma página web e um SmartContract em blockchain.
 
+## 📝 Fluxo de Controle
+Para a ordem em que as instruções são executadas em um código, os fluxos de controle são uma maneira de demonstrar como os eventos acontecem.
+O sistema terá duas partes, uma para o usuário cliente, e outra para o usuário administrador.
+
+Fluxo de controle do usuário cliente:
+1. Acessar a página de cadastro do cliente.
+2. Preencher as informações solicitadas e solicitar adesão a um dos contratos de seguro mútuo e aguardar a aprovação da solicitação de adesão.
+3. Após aprovado por um administrador, realizar o depósito inicial que representa a porcentagem do ativo que será segurado, mais o valor da taxa administrativa.
+4. Ser adicionado ao grupo do contrato após a confirmação do depósito inicial.
+5. Acessar a página de autenticação da carteira digital por meio da extensão de navegador MetaMask.
+6. Solicitar uma indenização, fornecendo as informações do Boletim de Ocorrência, ou repor a reserva de seguro, se estiver menor que o valor da porcentagem do ativo segurado.
+
+Fluxo de controle do usuário administrador:
+1. Acessar a página de autenticação da carteira digital por meio da extensão de navegador MetaMask, que possibilita o acesso às demais funcionalidades do sistema.
+2. Criar um grupo novo de um SmartContract.
+3. Avaliar e aceitar solicitações de adesão.
+4. Avaliar e aceitar solicitações de indenização.
+5. Ver os grupos que foram criados e a situação dos recursos disponíveis nestes grupos.
 
 ## 🗃 Histórico de lançamentos
 
