@@ -230,6 +230,7 @@ O valor do ativo não é correspondente ao do usuário indenizado
 ![image](https://user-images.githubusercontent.com/99209230/224576483-84b7ee58-bc27-43d7-a932-e7d9d7003eed.png)
 
 <br>
+
 ## 📝 Testes Automatizados - Sprint 4
 
 Realizamos testes unitários automatizados referentes ao Smart Contract no Remix IDE. 
@@ -297,7 +298,7 @@ Fluxo de controle do usuário administrador:
 5. Ver os grupos que foram criados e a situação dos recursos disponíveis nestes grupos.
 
 ## 📹 Vídeo do Front-End do Sistema
-<br>![video](https://github.com/2023M5T4-Inteli/Projeto5/issues/1#issue-1641254991)
+<br>![image](https://github.com/2023M5T4-Inteli/Projeto5/issues/1#issue-1641254991)
 
 ## 🗃 Histórico de lançamentos
 
