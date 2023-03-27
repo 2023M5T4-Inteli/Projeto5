@@ -258,8 +258,9 @@ Portanto, realizamos dois testes referentes às funções “checkConstructor()�
 <b>Resultado esperado:</b> A função irá retornar a taxa administrativa igualmente a inserida na criação do grupo .
 <br>
 <b>Pós-condição:</b> o valor da “taxaAdmin será retornado pela função "viewtaxAdmin()" e caso não seja igual ao valor esperado, irá aparecer a mensagem de erro "Taxa admin incorreta".
+<br>
 ![image](https://user-images.githubusercontent.com/99209230/227813287-524b04f3-346d-4d21-8624-74c0f8f5f769.png)
-<br
+<br>
 
 ## 📝 Fluxo de Comunicação
 
