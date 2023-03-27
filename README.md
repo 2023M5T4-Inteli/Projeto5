@@ -230,7 +230,7 @@ O valor do ativo não é correspondente ao do usuário indenizado
 ![image](https://user-images.githubusercontent.com/99209230/224576483-84b7ee58-bc27-43d7-a932-e7d9d7003eed.png)
 
 <br>
-## Testes Automatizados Sprint 4
+## 📝 Testes Automatizados - Sprint 4
 
 Realizamos testes unitários automatizados referentes ao Smart Contract no Remix IDE. 
 Esses testes são executados para identificar e corrigir problemas em pequenas partes do código e isso nos ajuda a garantir que o código está funcionando corretamente.
@@ -296,12 +296,15 @@ Fluxo de controle do usuário administrador:
 4. Avaliar e aceitar solicitações de indenização.
 5. Ver os grupos que foram criados e a situação dos recursos disponíveis nestes grupos.
 
+## 📹 Vídeo do Front-End do Sistema
+<br>![video](https://github.com/2023M5T4-Inteli/Projeto5/issues/1#issue-1641254991)
+
 ## 🗃 Histórico de lançamentos
 
 * 0.2.1 - 07/04/2023
     * Quinta entrega - Entrega Final
 * 0.2.0 - 24/03/2023
-    * Quarta entrega - 
+    * Quarta entrega - Front-End com integração do SmartContract e Testes Automatizados
 * 0.1.1 - 10/03/2023
     * Terceira entrega - Deploy e casos de teste
 * 0.1.0 - 24/02/2023
