@@ -298,7 +298,7 @@ Fluxo de controle do usuário administrador:
 5. Ver os grupos que foram criados e a situação dos recursos disponíveis nestes grupos.
 
 ## 📹 Vídeo do Front-End do Sistema
-<br>![https://github.com/2023M5T4-Inteli/Projeto5/issues/1#issue-1641254991](https://github.com/2023M5T4-Inteli/Projeto5/issues/1#issue-1641254991)
+<br>![Vídeo do Front-End do Sistema](https://github.com/2023M5T4-Inteli/Projeto5/issues/1#issue-1641254991)
 
 ## 🗃 Histórico de lançamentos
 
