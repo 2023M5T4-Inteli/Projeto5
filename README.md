@@ -229,6 +229,7 @@ O valor do ativo não é correspondente ao do usuário indenizado
 
 ![image](https://user-images.githubusercontent.com/99209230/224576483-84b7ee58-bc27-43d7-a932-e7d9d7003eed.png)
 
+<br>
 ## Testes Automatizados Sprint 4
 
 Realizamos testes unitários automatizados referentes ao Smart Contract no Remix IDE. 
@@ -237,6 +238,7 @@ Portanto, realizamos dois testes referentes às funções “checkConstructor()�
 <br>
 <br>
 <b>1º caso de teste:</b> função “checkConstructor()”:
+![image](https://user-images.githubusercontent.com/99209230/227813172-87bd30e0-b61e-4f19-aeda-6298ccbe0921.png)
 <br>
 <b>Pré-condição:</b> É criado um novo contrato, passando os valores referentes ao nome do grupo, mínimo de participantes, máximo de participantes, taxa de administração e à duração de dias do contrato.
 <br>
@@ -248,7 +250,7 @@ Portanto, realizamos dois testes referentes às funções “checkConstructor()�
 <br>
 <br>
 <b>2º caso de teste:</b> função “viewtaxAdmin()”
-<br>
+<br>![image](https://user-images.githubusercontent.com/99209230/227813244-23bade4a-da12-43a7-af5c-596f9c337faf.png)
 <b>Pré-condição:</b> O valor da taxa administrativo foi passado na struct meuGrupo.
 <br>
 <b>Procedimento de teste:</b> A função "viewtaxAdmin()" retorna a taxa admin do grupo criado.
@@ -256,6 +258,7 @@ Portanto, realizamos dois testes referentes às funções “checkConstructor()�
 <b>Resultado esperado:</b> A função irá retornar a taxa administrativa igualmente a inserida na criação do grupo .
 <br>
 <b>Pós-condição:</b> o valor da “taxaAdmin será retornado pela função "viewtaxAdmin()" e caso não seja igual ao valor esperado, irá aparecer a mensagem de erro "Taxa admin incorreta".
+![image](https://user-images.githubusercontent.com/99209230/227813287-524b04f3-346d-4d21-8624-74c0f8f5f769.png)
 <br
 
 ## 📝 Fluxo de Comunicação
