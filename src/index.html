@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="../src/main.css">
+  	<link rel="stylesheet" type="text/css" href="../src/criargrupo.css">
+  
+    <style>
+      body {
+        /* background-color: #030542; */
+        margin-left: 0px;  
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+      }
+      
+      h1, p, button span {
+        color: white;
+      }
+
+      .connect-button {
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+  padding: 10px;
+}
+
+.connect-button img {
+  max-width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.connect-button {
+  color: #02de82;
+  font-size: 20px;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  width: 70%; /* adicionado */
+  padding: 10px;
+}
+
+.image-129 {
+  width: 300px; /* ou outro valor que você desejar */
+  height: auto;
+}
+
+.image-1292 {
+  width: 500px; /* ou outro valor que você desejar */
+  height: auto;
+}
+.center-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('caminho/da/imagem.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 150px; /* altura desejada */
+}
+.center-image2 {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('caminho/da/imagem.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 0px;  */
+  /* image 5 */
+
+position: absolute;
+width: 432px;
+height: 300px;
+left: 850px;
+top: 100px;
+
+/* background: url(image.png); */
+
+}
+
+
+.left {
+        float: left;
+        width: 40%;
+        height: 100vh;
+        background-color: #1D2833;
+        margin: 0;
+        padding: 20px;
+      }
+
+.right {
+        float: right;
+        width: 50%;
+        height: 100vh;
+        background-color: #000000; /* ou qualquer outra cor de fundo */
+        margin: 0;
+        padding: 0;     
+       }
+  .minha-div {
+  margin-left: 70px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+    </style>
+  </head>
+
+  <body>
+    <div>
+    <div class="left">
+      <div class="center-image">
+    <img src="https://uploads-ssl.webflow.com/634db11a720fb238c878e83e/634db595bea80c4d64d3ce53_logo-coover-navbar.svg" loading="lazy" width="100" height="100" alt="" class="image-129">
+  </div>
+    <h1 class="minha-div" style="color: #02de82; font-family: Arial; line-height: 2;">Sign in</h1>
+    <p class="minha-div" style="color: #ffffff; font-family: Arial; "> Connect your wallet to sign in!</p>
+    <div>
+    <button id="connectButton" class="connect-button minha-div" onclick="bundle.connect()">
+      <img src="C:\Users\Inteli\Documents\src\Imagens\logo_metamask.png" alt="Logo MetaMask">
+      <span class="connect-button">Sign in with Wallet</span>
+    <!-- </button>
+    <button id="executeButton" onclick="bundle.execute()">Execute</button> -->
+    </div>
+    
+    <p class="minha-div" style="color: #02de82; font-family: Arial; "> Não está registrado? <a href="" style="color: rgb(155, 155, 155); font-weight: bold;"> Faça seu cadastro agora!</a></p>
+
+  </div>
+  <!-- <div class="right"> -->
+    <div class="center-image2">
+    <img src="C:\Users\Inteli\Documents\src\Imagens\usuaria_coover.png" alt="Imagem Image" loading="lazy" width="100" height="100" alt="" class="image-1292">
+  </div>
+  <!-- </div> -->
+  </body>
+
+  <script src="./dist/bundle.js" type="text/javascript"></script>
+</html>

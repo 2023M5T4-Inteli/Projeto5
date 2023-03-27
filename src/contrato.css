@@ -1,0 +1,56 @@
+.formulario {
+    background-color: #1D2833;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    margin-left: 230px;
+    /*Alinha os inputs no centro*/
+    height: 500px;
+    width: 900px;
+}
+
+/*Deixa as palavras dentro do campo de input*/
+.formulario input {
+    margin: px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.contrato {
+    background-color: #DBD4D4;
+    width: 100px;
+    padding: 225px 230px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around
+}
+
+.repor-reserva {
+    background-color: rgb(39, 183, 75);
+
+}
+
+.pedir-indenizacao {
+    background-color: rgb(194, 200, 9);
+}
+
+.sair-grupo {
+    background-color: rgb(255, 0, 0);
+}
+
+.botoes{
+    margin-left: 220px;
+    margin-top: 15px;
+    display: block;
+
+}
+
+#dados-pessoais {
+    display: none;
+  }
+  .titulo{
+      text-align: center;
+  }

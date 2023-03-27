@@ -1,0 +1,22 @@
+.botao-criar {
+    background-color: #1a201c;
+    color: white;
+    font-size: 16px;
+    border: solid 2px #00C289;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin-left: 17cm;
+    margin-top: 1cm;
+  }
+
+.SearchBar {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    width: 15cm;
+    align-items: center;
+    margin-left: 1cm;
+  }
+  .titulo{
+    margin-left: 50px;
+  }

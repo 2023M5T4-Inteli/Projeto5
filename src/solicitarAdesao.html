@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Solicitar Adesão</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="solicitarAdesao.css">
+    <!-- Fonte MontSerrat da Página-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"></link>
+  <script src="pag.js"></script>
+<body>
+    <nav>
+  <ul>
+    <!-- Referencia na Nav Bar os conteúdos presentes nela-->
+    <li><a href="grupo.html" id="grupo-link" style="color: #00C289;">Grupos</a></li>
+    <li><a href="contrato.html" id="contratos-link">Contratos</a></li>
+    <li><a href="indenizar.html" id="indenizacoes-link">Indenizações</a></li>
+    <summary class="Header-link" aria-label="View profile and more" data-analytics-event="{&quot;category&quot;:&quot;Header&quot;,&quot;action&quot;:&quot;show menu&quot;,&quot;label&quot;:&quot;icon:avatar&quot;}" aria-haspopup="menu" role="button">
+      <img src="https://www.citypng.com/public/uploads/preview/profile-user-round-white-icon-symbol-png-11639594348fn8rlcxrqo.png" alt="ADM" size="10" height="30" width="30" data-view-component="true" class="avatar" value="A D M">
+      <h1 class="ADM">ADM</h1>
+        <span class="unread-indicator js-feature-preview-indicator" style="top: 1px;"></span>
+      <span class="dropdown-caret"></span>
+    </summary>
+  </ul>
+</nav>
+<h1 style="color: aliceblue;" class="titulo">Solicitar Adesão</h1>
+<form action="grupo_formulario" method="POST" class="formulario">
+    <label for="nome_grupo">IMEI</label>
+    <input type="text" id="IMEI" name="IMEI" placeholder="Insira o IMEI aqui" required>
+    <label for="walletAdress">Endereço da carteira</label>
+    <input type="text" id="walletAdress" name="walletAdress" placeholder="Insira o endereço aqui" required>
+    <label for="valorAtivo">Valor do ativo mais taxa</label>
+    <input type="text" id="valorAtivo" name="valorAtivo" placeholder="Insira o valor aqui" required>
+    <input type="submit" value="Enviar" class="botao-enviar">
+  </form>
+</body>
+</html>
