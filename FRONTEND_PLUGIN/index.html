@@ -7,7 +7,7 @@
   
     <style>
       body {
-        /* background-color: #030542; */
+        
         margin-left: 0px;  
         height: 100%;
         margin: 0;
@@ -37,17 +37,17 @@
   border-radius: 20px;
   display: inline-flex;
   align-items: center;
-  width: 70%; /* adicionado */
+  width: 70%; 
   padding: 10px;
 }
 
 .image-129 {
-  width: 300px; /* ou outro valor que você desejar */
+  width: 300px; 
   height: auto;
 }
 
 .image-1292 {
-  width: 500px; /* ou outro valor que você desejar */
+  width: 500px; 
   height: auto;
 }
 .center-image {
@@ -59,27 +59,16 @@
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 150px; /* altura desejada */
+  height: 150px; 
 }
 .center-image2 {
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url('caminho/da/imagem.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 0px;  */
-  /* image 5 */
+
 
 position: absolute;
 width: 432px;
 height: 300px;
 left: 850px;
 top: 100px;
-
-/* background: url(image.png); */
 
 }
 
@@ -113,15 +102,9 @@ img {
 #connectButton:active {
   background-color: rgb(120, 253, 120);
 }
-/* #connectButton:hover {
-  background-color: greenyellow;
-} */
 #executeButton:active {
   background-color: rgb(120, 253, 120);
 }
-/* #executeButton:hover {
-  background-color: greenyellow;
-} */
 
     </style>
   </head>
@@ -135,10 +118,12 @@ img {
     <h1 class="minha-div" style="color: #02de82; font-family: Arial; line-height: 2;">Sign in</h1>
     <p class="minha-div" style="color: #ffffff; font-family: Arial; "> Connect your wallet to sign in!</p>
     <div>
+      <!-- Estrutura que permite a interação com blockchain, para a autenticação de uma carteira virtual MetaMask através de um botão na página -->
     <button id="connectButton" class="connect-button minha-div" onclick="bundle.connect()">
       <img src="\Imagens_Logos2\logo_metamask.png">
       <span class="connect-button">Sign in with Wallet</span>
     </button>
+    <!-- Estrutura que permite a realização de uma transação na rede Ethereum utilizando o MetaMask -->
     <button id="executeButton" class="connect-button minha-div" onclick="bundle.execute()">
     <img src="\Imagens_Logos2\logo_smartco.png">
     <span class="connect-button">Execute a test transaction!</span>
