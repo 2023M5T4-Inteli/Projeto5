@@ -5,19 +5,22 @@
     <link rel="stylesheet" type="text/css" href="../WEB/main/main.css">
   	<link rel="stylesheet" type="text/css" href="../WEB/main/criargrupo.css">
   
+    <!-- Estilos CSS utilizados na página -->
     <style>
       body {
-        
+        /* Define a margem, altura e overflow do corpo da página */
         margin-left: 0px;  
         height: 100%;
         margin: 0;
         overflow: hidden;
       }
-      
+
+      /* Define a cor do texto para h1, p e span dentro de botões */
       h1, p, button span {
         color: white;
       }
 
+       /* Define o estilo para botões */
       .connect-button {
   display: inline-flex;
   align-items: center;
@@ -25,12 +28,14 @@
   padding: 10px;
 }
 
+/* Define o tamanho e espaçamento para imagens dentro de botões */
 .connect-button img {
   max-width: 50px;
   height: auto;
   margin-right: 10px;
 }
 
+ /* Define o estilo para botões */
 .connect-button {
   color: #02de82;
   font-size: 20px;
@@ -41,15 +46,19 @@
   padding: 10px;
 }
 
+/* Define o tamanho de uma imagem */
 .image-129 {
   width: 300px; 
   height: auto;
 }
 
+ /* Define o tamanho de outra imagem */
 .image-1292 {
   width: 500px; 
   height: auto;
 }
+
+/* Define a imagem de fundo e posicionamento */
 .center-image {
   display: flex;
   justify-content: center;
@@ -61,9 +70,9 @@
   width: 100%;
   height: 150px; 
 }
+
+/* Define o posicionamento da imagem */
 .center-image2 {
-
-
 position: absolute;
 width: 432px;
 height: 300px;
@@ -72,7 +81,7 @@ top: 100px;
 
 }
 
-
+/* Define o estilo para uma div ficar à esquerda da tela*/
 .left {
         float: left;
         width: 40%;
@@ -82,23 +91,29 @@ top: 100px;
         padding: 20px;
       }
 
+/* Define o estilo para a div da direita */
 .right {
         float: right;
         width: 50%;
         height: 100vh;
-        background-color: #000000; /* ou qualquer outra cor de fundo */
+        background-color: #000000; 
         margin: 0;
         padding: 0;     
        }
+
+ /* Define o estilo para as divs personalizadas */
   .minha-div {
   margin-left: 70px;
 }
 
+/* Define o tamanho e preenchimento para imagens */
 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
+/* Define aparência de botões ao serem pressionados */
 #connectButton:active {
   background-color: rgb(120, 253, 120);
 }
@@ -113,6 +128,7 @@ img {
     <div>
     <div class="left">
       <div class="center-image">
+         <!-- Elemento que contém a logo da empresa na página -->
     <img src="https://uploads-ssl.webflow.com/634db11a720fb238c878e83e/634db595bea80c4d64d3ce53_logo-coover-navbar.svg" loading="lazy" width="100" height="100" alt="" class="image-129">
   </div>
     <h1 class="minha-div" style="color: #02de82; font-family: Arial; line-height: 2;">Sign in</h1>
@@ -130,15 +146,17 @@ img {
   </button>
     </div>
     
+    <!-- Link para o formulário de cadastro -->
     <p class="minha-div" style="color: #02de82; font-family: Arial; "> Não está registrado? <a href="" style="color: rgb(155, 155, 155); font-weight: bold;"> Faça seu cadastro agora!</a></p>
 
   </div>
-  <!-- <div class="right"> -->
+
+  <!-- Imagem que preenche o lado direito da página web -->
     <div class="center-image2">
     <img src="\Imagens_Logos2\moça_coover.png" alt="Imagem Image" loading="lazy" width="100" height="100" alt="" class="image-1292">
   </div>
-  <!-- </div> -->
   </body>
 
+  <!-- Script que carrega o arquivo bundle.js -->
   <script src="./dist/bundle.js" type="text/javascript"></script>
 </html>
