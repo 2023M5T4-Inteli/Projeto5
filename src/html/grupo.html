@@ -2,24 +2,21 @@
 <html>
 <head>
   <title>Grupos</title>
-  <link rel="stylesheet" type="text/css" href="main.css">
-  <link rel="stylesheet" type="text/css" href="grupo.css">
+  <link rel="stylesheet" type="text/css" href="..\css\grupo.css">
+  <link rel="stylesheet" type="text/css" href="..\css\main.css">
     <!-- Fonte MontSerrat da Página-->
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"></link>
   <script src="pag.js"></script>
+  <script src="../js/web3.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.2.7-rc.0/web3.min.js"></script>
 
 <body>
   <nav>
   <ul>
     <!-- Referencia na Nav Bar os conteúdos presentes nela-->
     <li><a href="grupo.html" id="grupo-link" style="color: #00C289;">Grupos</a></li>
-    <!-- Faz contrato-->
     <li><a href="contrato.html" id="contratos-link">Contratos</a></li>
-        <!-- Faz Inde-->
-
     <li><a href="indenizar.html" id="indenizacoes-link">Indenizações</a></li>
-
-    <!-- Faz Adm-->
     <summary class="Header-link" aria-label="View profile and more" data-analytics-event="{&quot;category&quot;:&quot;Header&quot;,&quot;action&quot;:&quot;show menu&quot;,&quot;label&quot;:&quot;icon:avatar&quot;}" aria-haspopup="menu" role="button">
       <img src="https://www.citypng.com/public/uploads/preview/profile-user-round-white-icon-symbol-png-11639594348fn8rlcxrqo.png" alt="ADM" size="10" height="30" width="30" data-view-component="true" class="avatar" value="A D M">
       <h1 class="ADM">ADM</h1>
@@ -30,7 +27,6 @@
 </nav>
 <h1 style="color: aliceblue;" class="titulo">Vizualização dos Grupos</h1>
 <input type="text" placeholder="Search" class="SearchBar">
-<!--Lnk Nav Bar-->
 <li><a href="criargrupo.html" class="botao-criar">Criar grupo</a></li>
 <br><br><br>
 <style>
@@ -54,46 +50,21 @@
       <th style="font-size:x-large;"> maximo de pessoas</th>
     </tr>
     <tr>
-      <td>contrato 1</td>
-      <td>20/06/2022</td>
-      <td>20/06/2023</td>
-      <td>15</td>
-      <td>75</td>
-    </tr>
-    <tr>
-      <td>contrato 2</td>
-      <td>14/02/2023</td>
-      <td>14/02/2024</td>
-      <td>25</td>
-      <td>100</td>
-    </tr>
-    <tr>
-      <td>contrato 3</td>
-      <td>08/03/2023</td>
-      <td>08/03/2024</td>
-      <td>5</td>
-      <td>50</td>
-    </tr>
-    <tr>
-      <td>contrato 4</td>
-      <td>27/05/2023</td>
-      <td>27/05/2024</td>
-      <td>50</td>
-      <td>250</td>
-    </tr>
-    <tr>
-      <td>contrato 5</td>
-      <td>30/02/2020</td>
-      <td>30/02/2025</td>
-      <td>100</td>
-      <td>750</td>
-    </tr>
-    <tr>
-      <td>contrato 6</td>
-      <td>01/01/2001</td>
-      <td>01/01/2021</td>
-      <td>10</td>
-      <td>100</td>
+     <div id="readArea">
+    <td onload="nomeGrupo()"></button>
+    
+
+    <button ="connectContract()">CONNECT TO CONTRACT</button>
+    <p id="contractArea">Status: Not connected to Contract</p>
+
+
+    <button onclick="getSaldoGrupo()">Saldo Grupo</button>
+    <p id="balanceArea">Saldo do Grupo</p>
+
+    <button onclick="qntParticipantes()">Quantidade participantes</button>
+    <p id="participantes">Quantidade de participantes</p>
+    
+</div>
     </tr>
   </table>
   

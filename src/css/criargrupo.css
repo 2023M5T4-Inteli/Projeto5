@@ -1,0 +1,42 @@
+#writeArea {
+    background-color: #1D2833;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    /*Deixa todos os inputs um em baixo do outro*/
+    display: flex;
+    flex-direction: column;
+    /*Alinha os inputs no centro*/
+    align-items: center;
+    
+  }
+  /*Deixa as palavras dentro do campo de input*/
+    .formulario input {
+        margin: px 0;
+        padding: 12px 50px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+    }  
+  .botao-enviar {
+    background-color: #00C289;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .botao-enviar:hover {
+    background-color: #00A377;
+  }
+  .titulo{
+    text-align: center;
+  }
+  #readArea {
+    flex-basis: 50%;
+    color: #00A377;
+}

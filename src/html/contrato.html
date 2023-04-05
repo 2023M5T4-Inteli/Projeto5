@@ -3,16 +3,15 @@
 
 <head>
   <title>Contrato</title>
-  <link rel="stylesheet" type="text/css" href="/main.css">
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
 
-  <link rel="stylesheet" type="text/css" href="contrato.css">
+  <link rel="stylesheet" type="text/css" href="../css/contrato.css">
   <!-- Fonte MontSerrat da Página-->
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   </link>
-  <script src="contrato.js"></script>
-  <script>function sairGrupo(){
-    alert("Você saiu do grupo")
-  }</script>
+  <script src="../js/web3.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.2.7-rc.0/web3.min.js"></script>
+  
 
 
 <body>
@@ -30,23 +29,29 @@
       </summary>
     </ul>
   </nav>
+ 
   <h1 style="color: aliceblue;" class="titulo">Contrato</h1>
-  <form action="grupo_formulario" method="POST" class="formulario">
       <div class="contrato">
        </div>
+
     <div class="botoes">
-
-      <a href="reporReserva.html" class="repor-reserva">Repor reserva</a>
-      <a href="solicitarIndenizacao.html" class="pedir-indenizacao">Pedir indenização</a>
-      <a onclick="sairGrupo()" class="sair-grupo">Sair do grupo</a>
+      <div id="readArea">
+        <button onclick="connectMetamask()">CONNECT TO METAMASK</button>
+        <p id="userArea">Status: Not connected to Metamask</p>
+    
+        <button onclick="connectContract()">CONNECT TO CONTRACT</button>
+        <p id="contractArea">Status: Not connected to Contract</p>
+        
     </div>
-  </form>
+    
+    <div id="writeArea">
+       
+        <button onclick="withdraw()">Adicione o Usuário ao Grupo</button><br>
+        <input type= 'number' id="amountInput"></p>
+    
+    </div>
 
-  <div id="dados-pessoais">
-    <p>Nome do grupo <span id="nome-placeholder"></span></p>
-    <p>Máximo de pessoas <span id="Max-placeholder"></span></p>
-    <p>Mínimo de pessoas <span id="min-placeholder"></span></p>
-  </div>
+
 </body>
 
 </html>

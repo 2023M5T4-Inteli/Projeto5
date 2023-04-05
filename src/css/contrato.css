@@ -8,6 +8,7 @@
     /*Alinha os inputs no centro*/
     height: 500px;
     width: 900px;
+    
 }
 
 /*Deixa as palavras dentro do campo de input*/
@@ -54,5 +55,7 @@
   .titulo{
       text-align: center;
   }
-
-  
+  #readArea {
+    flex-basis: 50%;
+    color: #00A377;
+}

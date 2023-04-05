@@ -7,6 +7,8 @@
     <!-- Fonte MontSerrat da Página-->
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"></link>
   <script src="pag.js"></script>
+  <script src="index.js"></script>
+</head>
 <body>
     <nav>
   <ul>
@@ -23,14 +25,14 @@
   </ul>
 </nav>
 <h1 style="color: aliceblue;" class="titulo">Solicitar Adesão</h1>
-<form action="grupo_formulario" method="POST" class="formulario">
+<form action="grupo_formulario" method="POST" class="formulario" id="form-adicionar-usuario">
     <label for="nome_grupo">IMEI</label>
     <input type="text" id="IMEI" name="IMEI" placeholder="Insira o IMEI aqui" required>
     <label for="walletAdress">Endereço da carteira</label>
     <input type="text" id="walletAdress" name="walletAdress" placeholder="Insira o endereço aqui" required>
     <label for="valorAtivo">Valor do ativo mais taxa</label>
     <input type="text" id="valorAtivo" name="valorAtivo" placeholder="Insira o valor aqui" required>
-    <input type="submit" value="Enviar" class="botao-enviar">
-  </form>
+    <input type="submit" value="Enviar" class="botao-enviar" >
+</form>
 </body>
 </html>
