@@ -32,24 +32,25 @@
  
   <h1 style="color: aliceblue;" class="titulo">Contrato</h1>
       <div class="contrato">
+        <div class="botoes">
+          <div id="readArea">
+            <button onclick="connectMetamask()">CONNECT TO METAMASK</button>
+            <p id="userArea">Status: Not connected to Metamask</p>
+        
+            <button onclick="connectContract()">CONNECT TO CONTRACT</button>
+            <p id="contractArea">Status: Not connected to Contract</p>
+            
+        </div>
+        
+        <div id="writeArea">
+           
+            <button onclick="withdraw()">Adicione o Usuário ao Grupo</button><br>
+            <input type= 'number' id="amountInput"></p>
+        
+        </div>
        </div>
 
-    <div class="botoes">
-      <div id="readArea">
-        <button onclick="connectMetamask()">CONNECT TO METAMASK</button>
-        <p id="userArea">Status: Not connected to Metamask</p>
-    
-        <button onclick="connectContract()">CONNECT TO CONTRACT</button>
-        <p id="contractArea">Status: Not connected to Contract</p>
-        
-    </div>
-    
-    <div id="writeArea">
-       
-        <button onclick="withdraw()">Adicione o Usuário ao Grupo</button><br>
-        <input type= 'number' id="amountInput"></p>
-    
-    </div>
+
 
 
 </body>
