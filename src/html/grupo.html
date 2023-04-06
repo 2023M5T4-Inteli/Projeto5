@@ -15,8 +15,7 @@
   <ul>
     <!-- Referencia na Nav Bar os conteúdos presentes nela-->
     <li><a href="grupo.html" id="grupo-link" style="color: #00C289;">Grupos</a></li>
-    <li><a href="contrato.html" id="contratos-link">Contratos</a></li>
-    <li><a href="indenizar.html" id="indenizacoes-link">Indenizações</a></li>
+    <li><a href="contrato.html" id="contratos-link">Indenizações</a></li>
     <summary class="Header-link" aria-label="View profile and more" data-analytics-event="{&quot;category&quot;:&quot;Header&quot;,&quot;action&quot;:&quot;show menu&quot;,&quot;label&quot;:&quot;icon:avatar&quot;}" aria-haspopup="menu" role="button">
       <img src="https://www.citypng.com/public/uploads/preview/profile-user-round-white-icon-symbol-png-11639594348fn8rlcxrqo.png" alt="ADM" size="10" height="30" width="30" data-view-component="true" class="avatar" value="A D M">
       <h1 class="ADM">ADM</h1>
@@ -27,7 +26,7 @@
 </nav>
 <h1 style="color: aliceblue;" class="titulo">Vizualização dos Grupos</h1>
 <input type="text" placeholder="Search" class="SearchBar">
-<li><a href="criargrupo.html" class="botao-criar">Criar grupo</a></li>
+<li><a href="criargrupo.html" class="botao-criar">Adicionar Usuário</a></li>
 <br><br><br>
 <style>
   table, th, td {
@@ -39,34 +38,55 @@
   }
   </style>
   <body>
+    <table style="width:100%">
+      <tr>
+        <th style="font-size:x-large;">Nome do Grupo</th>
+        <th style="font-size:x-large;"> Saldo do Grupo</th>
+        <th style="font-size:x-large;"> Quantidade de Participantes</th>
+        <th style="font-size:x-large;"> Taxa Administrativa</th>
+        <th style="font-size:x-large;"> Número Máximo de Participantes</th>
+      </tr>
+      <tr>
+   
+    </table>
     <div id="readArea" class="readArea">
       <td onload="nomeGrupo()"></button>
       
   
-      <button onclick="connectContract()">CONNECT TO CONTRACT</button>
-      <p id="contractArea">Status: Not connected to Contract</p>
+          <button onclick="connectContract()">CONNECT TO CONTRACT</button>
+          <p id="contractArea">Status: Not connected to Contract</p>
+        
+        <div style="display: flex; flex-direction: column;">
+          <button onclick="nomeGrupo()">Nome do Grupo</button>
+          <p id="nomeGrupo">Nome do Grupo</p>
+        </div>
+        
+        <div style="display: flex; flex-direction: column;">
+          <button onclick="getSaldoGrupo()">Saldo Grupo</button>
+          <p id="balanceArea">Saldo do Grupo</p>
+        </div>
+        
+        <div style="display: flex; flex-direction: column;">
+          <button onclick="qntParticipantes()">Quantidade participantes</button>
+          <p id="participantes">Quantidade de participantes</p>
+        </div>
+        
+        <div style="display: flex; flex-direction: column;">
+          <button onclick="taxaAdmin()">Taxa Administrativa do Contrato</button>
+          <p id="taxaAdmin">Taxa Administrativa do contrato</p>
+        </div>
+        
+        <div style="display: flex; flex-direction: column;">
+          <button onclick="maximoParticipantes()">Número máximo de participantes</button>
+          <p id="maximoParticipantes">Número máximo de participantes</p>
+        </div>
+        
   
-  
-      <button onclick="getSaldoGrupo()">Saldo Grupo</button>
-      <p id="balanceArea">Saldo do Grupo</p>
-  
-      <button onclick="qntParticipantes()">Quantidade participantes</button>
-      <p id="participantes">Quantidade de participantes</p>
       
   </div>
       </tr>
   
-  <table style="width:100%">
-    <tr>
-      <th style="font-size:x-large;">Contratos</th>
-      <th style="font-size:x-large;"> Data de criação</th>
-      <th style="font-size:x-large;"> Data de validade</th>
-      <th style="font-size:x-large;"> Minimo de pessoas</th>
-      <th style="font-size:x-large;"> maximo de pessoas</th>
-    </tr>
-    <tr>
- 
-  </table>
+  
   
   </body>
   </html>

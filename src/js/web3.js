@@ -335,7 +335,7 @@
 	}
 ];
 
-            const Address = "0xF5d85F1c7E12287ACf06F0d4b5fDE6d61C9e9361";
+            const Address = "0x56162319Fe9FB62281C13A9dAa8Bb0FA16fEBb35";
             window.web3 = await new Web3(window.ethereum);
             window.contract = await new window.web3.eth.Contract(ABI, Address);
             document.getElementById("contractArea").innerHTML = "Connected to Contract";
@@ -377,6 +377,21 @@
             const data = await window.contract.methods.nomeGrupo().call();
             document.getElementById("nomeGrupo").innerHTML = `Nome do Grupo: ${data}`;
         }
+
+		const taxaAdmin = async () => {
+			const data = await window.contract.methods.taxaAdmin().call();
+			document.getElementById("taxaAdmin").innerHTML = `Taxa Administrativa: ${data}`;
+		}
+
+		const maximoParticipantes = async () => { 
+			const data = await window.contract.methods.maximoParticipantes().call();
+			document.getElementById("maximoParticipantes").innerHTML = `Número Máximo de Participantes: ${data}`;
+		}
+
+		const minimoParticipantes = async () => {
+			const data = await window.contract.methods.minimoParticipantes().call();
+			document.getElementById("minimoParticipantes").innerHTML = `Número Mínimo de Participantes: ${data}`;
+		}
 
    
 
