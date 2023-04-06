@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Adicionar Usuário</title>
+	<title>Adicionar Usuário</title><!--Título e referências-->
     <link rel="stylesheet" type="text/css" href="..\css\main.css">
 
 	<link rel="stylesheet" type="text/css" href="..\css\criargrupo.css">
@@ -30,17 +30,17 @@
 
 <div id="readArea">
     <button onclick="connectMetamask()">CONNECT TO METAMASK</button>
-    <p id="userArea">Status: Not connected to Metamask</p>
+    <p id="userArea">Status: Not connected to Metamask</p><!--plugar a wallet-->
 
     <button onclick="connectContract()">CONNECT TO CONTRACT</button>
-    <p id="contractArea">Status: Not connected to Contract</p>
+    <p id="contractArea">Status: Not connected to Contract</p><!--conectar a wallet no contrato-->
 
 
     <button onclick="getSaldoGrupo()">Saldo Grupo</button>
-    <p id="balanceArea">Saldo do Grupo</p>
+    <p id="balanceArea">Saldo do Grupo</p><!--tirar dinheiro da wallet e adicionar como saldo do grupo-->
 
     <button onclick="qntParticipantes()">Quantidade participantes</button>
-    <p id="participantes">Quantidade de participantes</p>
+    <p id="participantes">Quantidade de participantes</p><!--visualizar quantidade de integrantes do grupo-->
     
 </div>
 
@@ -49,7 +49,7 @@
     <input type="text" id="imei" placeholder="Enter Imei"><br> 
     <input type="number" id="ativo" placeholder="Enter Valor Ativo"><br> 
     <input type="text" id="endereco" placeholder="Enter Endereco"><br> <br>
-    <button onclick="depositContract()">Adicione o Usuário ao Grupo</button><br>
+    <button onclick="depositContract()">Adicione o Usuário ao Grupo</button><br><!--adicionar usuário ao grupo seguindo as regras do contrato-->
 
 </div>
   

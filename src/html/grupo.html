@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Grupos</title>
+  <title>Grupos</title><!--Título e referências-->
   <link rel="stylesheet" type="text/css" href="..\css\grupo.css">
   <link rel="stylesheet" type="text/css" href="..\css\main.css">
     <!-- Fonte MontSerrat da Página-->
@@ -28,8 +28,9 @@
 <input type="text" placeholder="Search" class="SearchBar">
 <li><a href="criargrupo.html" class="botao-criar">Adicionar Usuário</a></li>
 <br><br><br>
+<!--organização do layout-->
 <style>
-  table, th, td {
+  table, th, td { 
     text-align: center;
     border-radius: 5px;
     color: #7A8A99;
@@ -50,35 +51,35 @@
    
     </table>
     <div id="readArea" class="readArea">
-      <td onload="nomeGrupo()"></button>
+      <td onload="nomeGrupo()"></button><!--abre o grupo-->
       
   
           <button onclick="connectContract()">CONNECT TO CONTRACT</button>
-          <p id="contractArea">Status: Not connected to Contract</p>
+          <p id="contractArea">Status: Not connected to Contract</p><!--plugar a wallet-->
         
         <div style="display: flex; flex-direction: column;">
           <button onclick="nomeGrupo()">Nome do Grupo</button>
-          <p id="nomeGrupo">Nome do Grupo</p>
+          <p id="nomeGrupo">Nome do Grupo</p><!--mostra o nome que foi atribuído ao grupo-->
         </div>
         
         <div style="display: flex; flex-direction: column;">
           <button onclick="getSaldoGrupo()">Saldo Grupo</button>
-          <p id="balanceArea">Saldo do Grupo</p>
+          <p id="balanceArea">Saldo do Grupo</p><!--tirar dinheiro da wallet e adicionar como saldo do grupo-->
         </div>
         
         <div style="display: flex; flex-direction: column;">
           <button onclick="qntParticipantes()">Quantidade participantes</button>
-          <p id="participantes">Quantidade de participantes</p>
+          <p id="participantes">Quantidade de participantes</p><!--visualizar quantidade de integrantes do grupo-->
         </div>
         
         <div style="display: flex; flex-direction: column;">
           <button onclick="taxaAdmin()">Taxa Administrativa do Contrato</button>
-          <p id="taxaAdmin">Taxa Administrativa do contrato</p>
+          <p id="taxaAdmin">Taxa Administrativa do contrato</p><!--exibe a taxa administrativa do contrato-->
         </div>
         
         <div style="display: flex; flex-direction: column;">
           <button onclick="maximoParticipantes()">Número máximo de participantes</button>
-          <p id="maximoParticipantes">Número máximo de participantes</p>
+          <p id="maximoParticipantes">Número máximo de participantes</p><!--exibe o número máximo de participantes do grupo-->
         </div>
         
   

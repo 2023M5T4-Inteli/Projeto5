@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+<head><!--Título e referências-->
   <title>Contrato</title>
   <link rel="stylesheet" type="text/css" href="../css/main.css">
 
@@ -29,14 +29,14 @@
     </ul>
   </nav>
  
-  <h1 style="color: aliceblue;" class="titulo">Contrato</h1>
+  <h1 style="color: aliceblue;" class="titulo">Contrato</h1><!--visualização do contrato-->
       <div class="contrato">
         <div class="botoes">
           <div id="readArea">
-            <button onclick="connectMetamask()">CONNECT TO METAMASK</button>
+            <button onclick="connectMetamask()">CONNECT TO METAMASK</button><!--plugar a wallet-->
             <p id="userArea">Status: Not connected to Metamask</p>
         
-            <button onclick="connectContract()">CONNECT TO CONTRACT</button>
+            <button onclick="connectContract()">CONNECT TO CONTRACT</button><!--conectar a wallet com o smart contract-->
             <p id="contractArea">Status: Not connected to Contract</p>
             
         </div>
@@ -44,7 +44,7 @@
         <div id="writeArea">
            
             <button onclick="withdraw()">SELECIONE UM VALOR PARA RETIRAR DO CONTRATO</button><br>
-            <input type= 'number' id="amountInput"></p>
+            <input type= 'number' id="amountInput"></p><!--transferencia de um valor entre a wallet e a reserva do grupo-->
         
         </div>
        </div>
