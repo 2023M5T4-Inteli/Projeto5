@@ -315,9 +315,7 @@ Com o encerramento do primeiro evento, o segundo se inicia com o cliente clicand
 <br>![Vídeo do Front-End do Sistema - Primeira versão](https://github.com/2023M5T4-Inteli/Projeto5/issues/1#issue-1641254991)
 
 ## 📹 Vídeo do Front-End do Sistema - Versão final
-<iframe src="https://drive.google.com/file/d/1nhgVDY0Ic8WLPhUv_hdCsQrBMGPS8duP/preview" ></iframe>
-<iframe allowfullscreen="allowfullscreen" src="https://drive.google.com/file/d/1nhgVDY0Ic8WLPhUv_hdCsQrBMGPS8duP/preview" ></iframe>
-<br>![Vídeo do Front-End do Sistema - Primeira versão](https://github.com/2023M5T4-Inteli/Projeto5/issues/3#issue-1658180465)
+https://drive.google.com/file/d/1nhgVDY0Ic8WLPhUv_hdCsQrBMGPS8duP/preview
 
 ## 🗃 Histórico de lançamentos
 
