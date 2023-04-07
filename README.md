@@ -303,9 +303,7 @@ A descrição da solução é útil para comunicar como os módulos se encaixam 
 Esses diagramas mostram a ordem das interações e as condições de entrada e saída, permitindo a visualização das etapas necessárias para a conclusão de uma tarefa ou processo, sendo úteis para criar uma documentação mais clara para os desenvolvedores do projeto. Também são usados para identificar problemas potenciais, como por exemplo, falhas de comunicação e gargalos de processo.
 O diagrama de sequência a seguir descreve o processo de integração do botão de conexão e depósito inicial, que utilizam o sistema web2.0, em uma plataforma que utiliza a tecnologia blockchain, ou seja, web3.0.
 
-<br>
-![image](https://github.com/2023M5T4-Inteli/Projeto5/issues/2#issue-1658177599)
-<br>
+<img width="494" alt="botaoConexao" src="https://user-images.githubusercontent.com/99191485/230515902-e0dd5eaf-573a-4e29-b9df-0a42591bf213.png">
 
 O processo se inicia quando o usuário cliente clica no botão de conectar wallet no frontend da plataforma (1.1). Com isso, o plugin MetaMask é acionado através da função javascript connectMetamask() (1.2), abrindo um pop-up na tela do usuário (1.3), onde o cliente confirma e autentica a sua carteira (1.4) que é registrada no blockchain do smart contract (1.5).
 Com o encerramento do primeiro evento, o segundo se inicia com o cliente clicando no botão de realizar o depósito inicial (2.1) no frontend da plataforma, que envia uma solicitação para o smart contract com a função depositoInicial() (2.2). O smart contract solicita autorização ao plugin do MetaMask do usuário (2.3), com outro pop-up na tela(2.4). Após a confirmação da transação (2.5) o smart contract recebe os recursos da carteira do usuário pelo próprio plugin do MetaMask (2.6), retornando para o frontend o valor atualizado dos recursos disponíveis para o usuário em seu contrato (2.7).
