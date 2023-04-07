@@ -304,7 +304,7 @@ Esses diagramas mostram a ordem das interações e as condições de entrada e s
 O diagrama de sequência a seguir descreve o processo de integração do botão de conexão e depósito inicial, que utilizam o sistema web2.0, em uma plataforma que utiliza a tecnologia blockchain, ou seja, web3.0.
 
 <br>
-![image](https://github.com/2023M5T4-Inteli/Projeto5/issues/2#issue-1658177599.png)
+![image](https://github.com/2023M5T4-Inteli/Projeto5/issues/2#issue-1658177599)
 <br>
 
 O processo se inicia quando o usuário cliente clica no botão de conectar wallet no frontend da plataforma (1.1). Com isso, o plugin MetaMask é acionado através da função javascript connectMetamask() (1.2), abrindo um pop-up na tela do usuário (1.3), onde o cliente confirma e autentica a sua carteira (1.4) que é registrada no blockchain do smart contract (1.5).
